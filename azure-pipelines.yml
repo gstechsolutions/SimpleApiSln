@@ -7,7 +7,11 @@ trigger:
 - master
 
 pool:
-  vmImage: 'windows-latest'
+  name: AutoLitasAgent
+  demands:
+    - msbuild
+    - Agent.Version -gtVersion 2.163.1
+
   
 
 variables:
