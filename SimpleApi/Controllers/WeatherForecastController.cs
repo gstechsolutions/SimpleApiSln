@@ -32,7 +32,7 @@ namespace SimpleApi.Controllers
         [Route("{id}")]
         public ActionResult<string> Get(int id)
         {
-            return "Jose";
+            return "Jose";//also updated
         }
     }
 }
